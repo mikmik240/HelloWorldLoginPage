@@ -66,8 +66,9 @@
         if (email === "kniveschau@scootingscooter.com" && password === "killerqueen") {
 
         //if true then redirect
-            window.location.replace('https://mikmik240.github.io/HelloWorldPortfolioPage/');
-
+           document.write('<a id="redirectLink" href="https://mikmik240.github.io/HelloWorldPortfolioPage/"></a>');
+            document.getElementById('redirectLink').click();
+	//click() to stimulate mouse click; 'redirectlink' to go to other webpage
 
         //if blank then alert
             } if (email === "" || password === "") {

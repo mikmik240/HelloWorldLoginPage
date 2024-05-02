@@ -57,7 +57,7 @@
 </div>
 
 <script>
-   function login() {
+    function login() {
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
         
@@ -66,17 +66,18 @@
         if (email === "kniveschau@scootingscooter.com" && password === "killerqueen") {
 
         //if true then redirect
-            document.write('<a id="redirectLink" href="https://mikmik240.github.io/HelloWorldPortfolioPage/"></a>');
+            document.write('<a id="redirectLink" href="https://discord.com/login"></a>');
             document.getElementById('redirectLink').click();
         //click() to stimulate mouse click; 'redirectlink' to go to other webpage
-		
-      //if blank then alert
+
+
+        //if blank then alert
             } if (email === "" && password === "") {
         alert("Please enter information");
         
         } else {
 		//if false then alert
-            alert("Please enter valid information.");
+            alert("Please enter valid information."); return;
         }
     }
 </script>
